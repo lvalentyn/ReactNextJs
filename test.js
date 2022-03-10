@@ -3,6 +3,10 @@
 // let b: string = 'word'
 // let c = true
 // let e: any = 3
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 // let d: string[] = ['asdas', 'asdasd', 'asdasd']
 // function test(a: string): string | number {
 // 	return ''
@@ -128,5 +132,37 @@
 // 	}
 // }
 // 3.08
-const a = [0, 'a', 1];
-a.push(1);
+// const a: [number, string, number] = [0, 'a', 1]
+// 3.09
+// function logTime<T>(num: T): T {
+// 	console.log(new Date());
+// 	return num
+// }
+// function logTimeA<T>(num: T): T {
+// 	console.log(new Date());
+// 	if (typeof num == 'string') {
+// 		num.toLocaleLowerCase();
+// 	}
+// 	return num
+// }
+// logTime<string>('asd')
+// interface MyInterface {
+// 	transform: <T, F>(a: T) => F
+// }
+// class MyGenClass<T> {
+// 	value: T
+// }
+// const a = new MyGenClass<number>()
+// a.value
+// interface TimeStamp {
+// 	stamp: number;
+// }
+// function logTimeStamp<T extends TimeStamp>(num: T): T {
+// 	console.log(num.stamp)
+// 	return num;
+// }
+// 3.10
+const react_1 = __importDefault(require("react"));
+const a = react_1.default.createElement("div", { tabIndex: 0 },
+    react_1.default.createElement("span", null, 1 + 1));
+const b = react_1.default.createElement('div', { tabIndex: 0 }, 1 + 1);

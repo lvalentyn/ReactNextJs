@@ -169,4 +169,52 @@
 
 // 3.08
 
-const a: [number, string, number] = [0, 'a', 1]
+// const a: [number, string, number] = [0, 'a', 1]
+
+// 3.09
+// function logTime<T>(num: T): T {
+// 	console.log(new Date());
+// 	return num
+// }
+// function logTimeA<T>(num: T): T {
+// 	console.log(new Date());
+// 	if (typeof num == 'string') {
+// 		num.toLocaleLowerCase();
+// 	}
+// 	return num
+// }
+
+// logTime<string>('asd')
+
+// interface MyInterface {
+// 	transform: <T, F>(a: T) => F
+// }
+
+// class MyGenClass<T> {
+// 	value: T
+// }
+
+// const a = new MyGenClass<number>()
+// a.value
+
+// interface TimeStamp {
+// 	stamp: number;
+// }
+
+// function logTimeStamp<T extends TimeStamp>(num: T): T {
+// 	console.log(num.stamp)
+// 	return num;
+// }
+
+
+// 3.10
+
+import React from "react";
+
+const a: JSX.Element = <div tabIndex={0}>
+	<span>
+		{1 + 1}
+	</span>
+</div>;
+
+const b: JSX.Element = React.createElement('div', { tabIndex: 0 }, 1 + 1)
