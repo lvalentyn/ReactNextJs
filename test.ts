@@ -168,3 +168,5 @@
 // }
 
 // 3.08
+
+const a: [number, string, number] = [0, 'a', 1]

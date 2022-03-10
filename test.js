@@ -84,28 +84,49 @@
 // 	s: string;
 // }
 // 3.07
-var Direction;
-(function (Direction) {
-    Direction["Up"] = "UP";
-    Direction["Down"] = "Down";
-    Direction["Left"] = "Left";
-    Direction["Right"] = "Right";
-})(Direction || (Direction = {}));
-var Decition;
-(function (Decition) {
-    Decition[Decition["Yes"] = 1] = "Yes";
-    Decition[Decition["No"] = calcEnum()] = "No";
-})(Decition || (Decition = {}));
-function calcEnum() {
-    return 2;
-}
-function runEnum(obj) {
-}
-runEnum(Direction);
-var Test;
-(function (Test) {
-    Test[Test["A"] = 0] = "A";
-})(Test || (Test = {}));
-let test = Test.A;
-let nameA = Test[test];
-let c = 0 /* A */;
+// enum Direction {
+// 	Up = 'UP',
+// 	Down = 'Down',
+// 	Left = 'Left',
+// 	Right = 'Right'
+// }
+// enum Decition {
+// 	Yes = 1,
+// 	No = calcEnum()
+// }
+// function calcEnum() {
+// 	return 2
+// }
+// function runEnum(obj: { Up: string }) {
+// }
+// runEnum(Direction)
+// enum Test {
+// 	A
+// }
+// let test = Test.A;
+// let nameA = Test[test]
+// const enum ConstEnum {
+// 	A,
+// 	B
+// }
+// let c = ConstEnum.A
+// enum Dice {
+// 	One = 1,
+// 	Two,
+// 	Tree
+// }
+// function ruDice(dice: Dice) {
+// 	switch (dice) {
+// 		case Dice.One:
+// 			return 'odin';
+// 		case Dice.Two:
+// 			return 'dva';
+// 		case Dice.Tree:
+// 			return 'tri';
+// 		default:
+// 			const a: never = dice;
+// 	}
+// }
+// 3.08
+const a = [0, 'a', 1];
+a.push(1);
