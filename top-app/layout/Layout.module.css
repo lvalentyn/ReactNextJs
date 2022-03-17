@@ -6,19 +6,24 @@
 		". sidebar body ." 1fr
 		"footer footer footer footer" auto
 		/ auto 230px minmax(320px, 1200px) auto;
+
 	min-height: 100vh;
 }
 
 .header {
 	grid-area: header;
+
 	display: none;
 }
+
 .sidebar {
 	grid-area: sidebar;
 }
+
 .body {
 	grid-area: body;
 }
+
 .footer {
 	grid-area: footer;
 }

@@ -1,15 +1,17 @@
 .tag {
 	display: inline-block;
+
 	margin-right: 5px;
-	border-radius: 20px;
 	padding: 5px 10px;
 
+	border-radius: 20px;
 }
 
 .sm {
 	font-size: 12px;
 	line-height: 12px;
 }
+
 .md {
 	font-size: 14px;
 	line-height: 14px;
@@ -25,12 +27,14 @@
 
 	font-weight: 700;
 }
+
 .gray {
 	color: var(--white);
 	background: #B3C0D9;
 
 	font-weight: 700;
 }
+
 .green {
 	color: var(--green);
 	background: var(--green-light);
@@ -40,7 +44,7 @@
 
 .primary {
 	color: var(--primary);
-	background: none;
 
 	border: 1px solid var(--primary);
+	background: none;
 }
